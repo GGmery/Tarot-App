@@ -1,17 +1,17 @@
 # 🌟 Tarot App
 
-**Tarot App** es una aplicación desarrollada con Android Studio que permite al usuario explorar el tarot de forma interactiva y personalizada. Cada día, el usuario puede sacar hasta **5 cartas únicas**, eliminar hasta **3 que no le resuenen**, y construir su propia **TarotDex** con las cartas descubiertas.
+**Tarot App** es una aplicación desarrollada con Android Studio que permite al usuario explorar el tarot de forma interactiva y personalizada. Cada día, el usuario puede sacar **6 cartas únicas**, eliminar hasta **3 que no le resuenen**, y construir su propia **TarotDex** con las cartas descubiertas.
 
 ---
 
 ## 📱 Características principales
 
 - **Extracción diaria de cartas**  
-  El usuario puede sacar hasta **5 cartas distintas por día**, sin repeticiones.  
+  El usuario puede sacar **6 cartas distintas por día**, sin repeticiones.  
   Tiene la opción de **eliminar hasta 3 cartas** que no le convenzan, evitando que se repitan ese mismo día.
 
 - **Persistencia y estrategia**  
-  Las cartas eliminadas pueden volver a aparecer al día siguiente.  
+  Las cartas eliminadas pueden volver a aparecer al día siguiente, al igual que las que salieron los días anteriores.  
   Para completar la **TarotDex**, el usuario debe decidir entre aceptar todas las cartas o eliminar estratégicamente.
 
 - **TarotDex**  
@@ -28,7 +28,7 @@ La app utiliza una **Bottom Navigation Bar** con tres secciones principales:
 |-----------------------|-------------|
 | **Cartas Diarias**    | Muestra las cartas obtenidas ese día. Al tocar una carta, se despliega su información. Las cartas desaparecen al día siguiente. |
 | **TarotDex**          | Visualiza todas las cartas que el usuario ha desbloqueado. Ideal para consulta y seguimiento. |
-| **Generador de Cartas** | Permite generar hasta 5 cartas nuevas cada día. |
+| **Generador de Cartas** | Permite generar exactamente 6 cartas nuevas cada día, abriendo un sobre. |
 
 ---
 
@@ -45,6 +45,24 @@ La app utiliza una **Bottom Navigation Bar** con tres secciones principales:
 
 ---
 
+## 🌗 Modos de visualización
+
+La app está diseñada para adaptarse a diferentes configuraciones de pantalla:
+
+- **Modo día**
+- **Modo noche**
+- **Landscape día**
+- **Landscape noche**
+
+Pantallas disponibles en todos los modos:
+
+- Cartas del Día
+- Detalles de la carta
+- TarotDex
+- Generador de cartas
+
+---
+
 ## 🚀 Requisitos
 
 - **Android SDK**: minSdk 27, targetSdk 34 (recomendado)
@@ -58,6 +76,7 @@ La app utiliza una **Bottom Navigation Bar** con tres secciones principales:
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/tuusuario/tarot-app.git
+
 2. Ábrelo en Android Studio.
 
 3. Sincroniza las dependencias con Gradle.
